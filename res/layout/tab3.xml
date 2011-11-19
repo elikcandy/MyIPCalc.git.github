@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarDefaultDelayBeforeFade="10000" android:gravity="top|left">
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonClearHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clearHistoryClick"
+                android:text="Очистить историю" >
+            </Button>
+
+            <EditText
+                android:id="@+id/historyText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical" android:gravity="top|left" android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="6pt">
+
+                <requestFocus >
+                </requestFocus>
+            </EditText>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
